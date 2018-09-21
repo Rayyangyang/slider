@@ -1,0 +1,67 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.wrapper{
+	width: 500px;
+	height: 300px;
+	margin: 100px auto;
+	border: 1px solid black;
+	overflow: hidden;
+	position: relative;
+}
+.wrapper .slider ul{
+	width: 2500px;
+	height: 300px;
+	position: absolute;
+}
+.wrapper .slider ul li{
+	float: left;
+}
+.wrapper .slider ul li img{
+	width: 500px;
+	height: 300px;
+}
+.wrapper .btn span{
+	display: block;
+	height: 40px;
+	width: 40px;
+	font-size: 20px;
+	text-align: center;
+	line-height: 40px;
+	background-color: #fff;
+	position: absolute;
+	top:50%;
+	margin-top:-15px;
+	cursor: pointer;
+	opacity: 0.1;
+}
+.wrapper:hover .btn span{
+	opacity: 0.7;
+}
+.wrapper .leftBtn {
+	left: 0;
+}
+.wrapper .rightBtn {
+	right:0;
+}
+.wrapper .point ul {
+	width: 100px;
+	position: absolute;
+	bottom: 10px;
+	left:50%;
+	margin-left: -50px;
+}
+.wrapper .point ul li{
+	width: 15px;
+	height: 15px;
+	background-color: #ccc;
+	float: left;
+	margin-right: 10px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.wrapper .point .active{
+	background-color: red;
+}
